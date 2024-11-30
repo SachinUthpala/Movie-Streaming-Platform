@@ -246,32 +246,7 @@ $relised_result = $conn->query($relisedSql);
     </div> -->
 
     <!-- footer -->
-    <section class="footer">
-        <a href="" class="logo">
-            <i class="bx bxs-movie"></i>M Booking
-        </a>
-        <div class="social2">
-            <h3>Quick Links</h3>
-            <a href="" class="gap-flex" ><i class='bx bx-home-smile' ></i>Home</a>
-            <a href="" class="gap-flex" ><i class='bx bx-camera-movie' ></i>Relised Movies</a>
-            <a href="" class="gap-flex" ><i class='bx bxs-movie' ></i>Upcomming Movies</a>
-            <a href="" class="gap-flex" ><i class='bx bxs-user-detail' ></i>Contact Us</a>
-        </div>
-
-        <div class="social2">
-            <h3>Quick Contact</h3>
-            <a href="" class="gap-flex"><i class='bx bxs-phone'></i>+94 760 271 525</a>
-            <a href="" class="gap-flex"><i class='bx bxs-phone-call' ></i>0712858574 | 0147258369 </a>
-            <a href="" class="gap-flex"><i class='bx bxl-gmail' ></i>MBooking@gmail.com</a>
-            
-        </div>
-        
-        <div class="social">
-            <a href="./MoreDetails.html"><i class='bx bxl-facebook'></i></a>
-            <a href=""><i class='bx bxl-twitter'></i></a>
-            <a href=""><i class='bx bxl-instagram'></i></a>
-        </div>
-    </section>
+    <?php require ('./Components/Footer.php'); ?>
     
 
 
