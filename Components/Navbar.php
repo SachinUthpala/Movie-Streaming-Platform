@@ -12,21 +12,21 @@
                                 <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
                             </div>
                         </a>
-                        <a href="index.html" class="navbar-brand">
+                        <a href="index.php" class="navbar-brand">
                             <img src="images/logo.png" class="img-fluid logo" alt="" />
                         </a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <div class="menu-main-menu-container">
                                 <ul id="top-menu" class="navbar-nav ml-auto">
-                                    <li class="menu-item"><a href="#">Home</a></li>
-                                    <li class="menu-item"><a href="./moviePages.html">Movies</a>
+                                    <li class="menu-item"><a href="./index.php">Home</a></li>
+                                    <li class="menu-item"><a href="./moviePages.php">Movies</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="#">English Movies</a></li>
-                                            <li class="menu-item"><a href="#">Tamil Movies</a></li>
-                                            <li class="menu-item"><a href="#">Theligu Movies</a></li>
-                                            <li class="menu-item"><a href="#">Hindi Movies</a></li>
-                                            <li class="menu-item"><a href="#">Sinhala Movies</a></li>
-                                            <li class="menu-item"><a href="#">Other Movies</a></li>
+                                            <li class="menu-item"><a href="./moviePages.php?category=English">English Movies</a></li>
+                                            <li class="menu-item"><a href="./moviePages.php?category=Tamil">Tamil Movies</a></li>
+                                            <li class="menu-item"><a href="./moviePages.php?category=Theligu">Theligu Movies</a></li>
+                                            <li class="menu-item"><a href="./moviePages.php?category=Hindi">Hindi Movies</a></li>
+                                            <li class="menu-item"><a href="./moviePages.php?category=Sinhala">Sinhala Movies</a></li>
+                                            <li class="menu-item"><a href="./moviePages.php?category=Other">Other Movies</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item"><a href="#">Tv Shows</a>
