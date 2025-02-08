@@ -4,8 +4,15 @@ $UserName = "root";
 $Password = "";
 $DbName = "moviehub";
 
-$conn = new mysqli($ServerName, $UserName, $Password, $DbName);
+try {
+    // Create a new PDO connection
+    $conn = new PDO("mysql:host=$ServerName;dbname=$DbName;charset=utf8", $UserName, $Password);
 
-if ($conn->connect_error) {
-    echo "connection Fail";
+    // Set PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Optional: Uncomment to verify connection
+    // echo "Connected successfully"; 
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
