@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+$category = $_GET['category'];
+$pagename =  $category . " Movies"
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +41,7 @@
 
   <br><br><br><br> <br>
 
-  <h1 style="text-align: center; background: linear-gradient(to right, #e5091400 0%, #e50914 50%, #e5091400 100%); color: white; padding: 20px;">English Movies</h1>
+  <h1 style="text-align: center; background: linear-gradient(to right, #e5091400 0%, #e50914 50%, #e5091400 100%); color: white; padding: 20px;"> <?php echo $pagename; ?></h1>
 
 
 
