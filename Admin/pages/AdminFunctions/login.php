@@ -2,6 +2,7 @@
 
 // db connection
 require '../../../Configs/db.config.php';
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userMail = isset($_POST['userMail']) ? filter_var($_POST['userMail'], FILTER_SANITIZE_EMAIL) : null;
@@ -27,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: ../dashboard.php");
             } else {
                 echo "Invalid email or password.";
+                $_SESSION['login_Sucess'] = 0;
+                header("Location: ../sign-in.php");
             }
         } catch (PDOException $e) {
             echo "Database error: " . $e->getMessage();
