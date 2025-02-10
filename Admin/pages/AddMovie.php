@@ -53,7 +53,7 @@ if( $_SESSION['Added'] == 1 ) {
   
   </script>';
 
-  $_SESSION['login_Sucess'] = null;
+  $_SESSION['Added'] = null;
 
 }
 
